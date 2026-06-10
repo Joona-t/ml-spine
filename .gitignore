@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.DS_Store
+node_modules/
+.venv/
+.ipynb_checkpoints/
+*.egg-info/
+runs/
+*.ckpt
+*.pt
+*.safetensors
+.trackio/
