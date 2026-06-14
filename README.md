@@ -23,22 +23,27 @@ Hardware: Apple M1 Pro 16GB (MPS + MLX). Compute: local + free tiers only.
 | 11 | DPO + GRPO from the papers | — | — | ☐ |
 | 12 | MLX LoRA fine-tune capstone + retrospective | — | — | ☐ |
 
+## Sources
+
+Primary spine: [Karpathy Neural Networks: Zero to Hero](https://karpathy.ai/zero-to-hero.html) + from-memory rebuilds.
+Reference repos: [nn-zero-to-hero](https://github.com/karpathy/nn-zero-to-hero), [micrograd](https://github.com/karpathy/micrograd), [makemore](https://github.com/karpathy/makemore), [minBPE](https://github.com/karpathy/minbpe), [nanoGPT](https://github.com/karpathy/nanoGPT).
+
 ## Resources per week
 
 | Wk | Watch/read |
 |----|------------|
-| 01 | Karpathy NN:Z2H L1; 3B1B Essence of Calculus ch.3–4 + ch.11; Khan multivariable partials |
-| 02 | NN:Z2H L2–3; 3B1B Essence of Linear Algebra ch.4 + ch.9 |
-| 03 | NN:Z2H L4–5 (the partials gap-closer — heaviest week, protect it) |
-| 04 | NN:Z2H L6; 3B1B EoLA ch.14 (eigenvectors) |
-| 05 | NN:Z2H L7; 3B1B "Attention in transformers"; karpathy/nanoGPT shakespeare-char |
-| 06 | NN:Z2H L8; karpathy/minbpe exercise.md (do the exercise before reading his solution) |
-| 07 | Spinning Up parts 1–3 (docs only); Sutton & Barto ch.3 + 13.1–13.4 |
-| 08 | Sutton & Barto ch.6.1–6.5; CleanRL dqn.py only AFTER own attempt |
-| 09 | Spinning Up PPO + GAE; "37 Implementation Details of PPO" (the debugging checklist) |
-| 10 | HF "Illustrating RLHF" — then pure implementation on the W5 model |
-| 11 | DPO paper (Rafailov 2023, full); DeepSeekMath §4 (GRPO) |
-| 12 | mlx_lm.lora docs + mlx-examples/lora; MIT OCW 18.06 L29 (Strang, SVD) |
+| 01 | [Karpathy NN:Z2H L1 — micrograd](https://www.youtube.com/watch?v=VMj-3S1tku0); [3B1B Essence of Calculus](https://www.3blue1brown.com/topics/calculus) ch.3–4 + ch.11; [Khan multivariable derivatives](https://www.khanacademy.org/math/multivariable-calculus/multivariable-derivatives) |
+| 02 | [NN:Z2H L2 — bigram language model](https://www.youtube.com/watch?v=PaCmpygFfXo); [NN:Z2H L3 — MLP makemore](https://youtu.be/TCH_1BHY58I); [3B1B Essence of Linear Algebra](https://www.youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr) ch.4 + ch.9 |
+| 03 | [NN:Z2H L4 — activations, gradients, BatchNorm](https://youtu.be/P6sfmUTpUmc); [NN:Z2H L5 — backprop ninja](https://youtu.be/q8SA3rM6ckI) (the partials gap-closer — heaviest week, protect it) |
+| 04 | [NN:Z2H L6 — WaveNet](https://youtu.be/t3YJ5hKiMQ0); [3B1B EoLA eigenvectors/eigenvalues](https://www.youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr) |
+| 05 | [NN:Z2H L7 — GPT from scratch](https://www.youtube.com/watch?v=kCc8FmEb1nY); [3B1B Attention in transformers](https://www.3blue1brown.com/lessons/attention); [nanoGPT](https://github.com/karpathy/nanoGPT) shakespeare-char |
+| 06 | [NN:Z2H L8 — GPT tokenizer](https://www.youtube.com/watch?v=zduSFxRajkE); [minBPE](https://github.com/karpathy/minbpe) exercise.md (do the exercise before reading his solution) |
+| 07 | [Spinning Up RL intro](https://spinningup.openai.com/en/latest/spinningup/rl_intro.html) parts 1–3 (docs only); [Sutton & Barto RL book](http://incompleteideas.net/book/the-book-2nd.html) ch.3 + 13.1–13.4 |
+| 08 | [Sutton & Barto RL book PDF](http://incompleteideas.net/book/RLbook2020.pdf) ch.6.1–6.5; [CleanRL dqn.py](https://github.com/vwxyzjn/cleanrl/blob/master/cleanrl/dqn.py) only AFTER own attempt |
+| 09 | [Spinning Up PPO](https://spinningup.openai.com/en/latest/algorithms/ppo.html) + GAE; [37 Implementation Details of PPO](https://iclr-blog-track.github.io/2022/03/25/ppo-implementation-details/) debugging checklist |
+| 10 | [Hugging Face RLHF overview](https://huggingface.co/blog/rlhf) — then pure implementation on the W5 model |
+| 11 | [DPO paper — Rafailov et al. 2023](https://arxiv.org/abs/2305.18290); [DeepSeekMath paper](https://arxiv.org/abs/2402.03300) §4 (GRPO) |
+| 12 | [MLX LM fine-tuning docs](https://github.com/ml-explore/mlx-lm/blob/main/README.md#fine-tuning) + [MLX LoRA examples](https://github.com/ml-explore/mlx-examples/tree/main/lora); [MIT OCW 18.06 L29 — SVD](https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/resources/lecture-29-singular-value-decomposition/) |
 
 ## Environment
 
